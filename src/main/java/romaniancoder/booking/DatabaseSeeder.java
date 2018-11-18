@@ -17,12 +17,12 @@ public class DatabaseSeeder implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... strings) throws Exception {
+    public void run(String... strings) {
         List<HotelBooking> bookings = new ArrayList<>();
 
-        bookings.add(new HotelBooking("Marriot", 200.50, 3));
-        bookings.add(new HotelBooking("Ibis", 90, 4));
-        bookings.add(new HotelBooking("Novotel", 140.74, 1));
+        bookings.add(new HotelBooking("Radison", 5000, 3));
+        bookings.add(new HotelBooking("Regency", 2500, 4));
+        bookings.add(new HotelBooking("Le Meridien", 4500, 1));
 
         bookingRepository.save(bookings);
     }

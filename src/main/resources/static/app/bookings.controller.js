@@ -33,7 +33,7 @@
         }
 
         function getAffordable(){
-            var url = "/bookings/affordable/" + 100;
+            var url = "/bookings/affordable/" + 3000;
             var bookingsPromise = $http.get(url);
             bookingsPromise.then(function(response){
                 vm.bookings = response.data;
